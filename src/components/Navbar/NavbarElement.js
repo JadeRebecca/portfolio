@@ -1,9 +1,8 @@
-import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 import styled from 'styled-components'
 
 export const Nav = styled.nav`
-background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.background};
   height: 80px;
   //   margin-top: -80px;
   display: flex;
@@ -33,7 +32,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(LinkS)`
-  color: #f00;
+  color: ${({ theme }) => theme.main};
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -47,7 +46,7 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-    color: #01bf71;
+    color: ${({ theme }) => theme.main};
     display: block;
     position: absolute;
     top: 0;
@@ -81,7 +80,7 @@ export const NavLink = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid ${({ theme }) => theme.main};
   }
 `
 export const NavBtn = styled.nav`
@@ -90,24 +89,5 @@ export const NavBtn = styled.nav`
 
   @media screen and (max-width: 768px) {
     display: none;
-  }
-`
-export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
-  background: #01bf71;
-  white-space: nowrap;
-  padding: 10px 22px;
-  color: #010606;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
   }
 `

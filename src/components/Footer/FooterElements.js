@@ -10,6 +10,6 @@ export const FooterContainer = styled.div`
 export const Link = styled.p`
   cursor: pointer;
   &:hover {
-    color: green;
+    color: ${({ theme }) => theme.main};
   }
 `

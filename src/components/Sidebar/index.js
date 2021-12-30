@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonLink from '../Button'
 import {
   SidebarContainer,
   Icon,
@@ -6,7 +7,6 @@ import {
   SidebarMenu,
   SidebarLink,
   SidebarWrapper,
-  SidebarRoute,
   SideBtnWrap,
 } from './SidebarElements'
 // import { }
@@ -22,7 +22,7 @@ const Sidebar = ({ toggle, isOpen }) => {
             About
           </SidebarLink>
           <SidebarLink to="experiences" onClick={toggle}>
-            Experience
+            Experiences
           </SidebarLink>
           <SidebarLink to="work" onClick={toggle}>
             Work
@@ -32,7 +32,7 @@ const Sidebar = ({ toggle, isOpen }) => {
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/route">Resume</SidebarRoute>
+          <ButtonLink text="Resume" />
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

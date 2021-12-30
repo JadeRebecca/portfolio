@@ -23,7 +23,7 @@ export const HeroContent = styled.div`
 `
 export const HeroP1 = styled.p`
   margin-top: 24px;
-  color: green;
+  color: ${({ theme }) => theme.main};
   font-size: 20px;
   text-align: left;
   max-width: 600px;
@@ -38,7 +38,7 @@ export const HeroP1 = styled.p`
 `
 
 export const HeroH1 = styled.h1`
-  // color: #fff;
+  color: ${({ theme }) => theme.text};
   font-size: 48px;
   text-align: left;
 
@@ -51,8 +51,8 @@ export const HeroH1 = styled.h1`
   }
 `
 export const HeroP2 = styled.p`
+  color: ${({ theme }) => theme.text};
   margin-top: 24px;
-  // color: #fff;
   font-size: 24px;
   text-align: left;
   max-width: 600px;

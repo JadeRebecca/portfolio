@@ -11,7 +11,6 @@ import {
   NavItem,
   NavLink,
   NavBtn,
-  NavBtnLink,
 } from './NavbarElement'
 import ButtonLink from '../Button'
 
@@ -23,14 +22,7 @@ const Navbar = ({ toggle, theme, themeToggler }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo
-            to="/"
-            onClick={toggleHome}
-            // spy={true}
-            // smooth={true}
-            // offset={-80}
-            // duration={500}
-          >
+          <NavLogo to="/" onClick={toggleHome}>
             JD
           </NavLogo>
           <MobileIcon onClick={toggle}>
