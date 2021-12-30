@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
+  background: ${({ theme }) => theme.background};
+  transition: all 0.8s ease-in-out;
+
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }

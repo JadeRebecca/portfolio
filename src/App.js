@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
+import { useDarkMode } from './hooks/useDarkMode'
 import { GlobalStyles } from './components/Globalstyle'
 import { lightTheme, darkTheme } from './components/Themes'
 import './App.css'
@@ -8,17 +9,16 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import Home from './pages'
 
 function App() {
-  const [theme, setTheme] = useState('light')
-  const themeToggler = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light')
-  }
+  const [theme, themeToggler, mountedComponent] = useDarkMode()
+  const themeMode = theme === 'light' ? lightTheme : darkTheme
+  if (!mountedComponent) return <div />
+
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={themeMode}>
       <>
         <GlobalStyles />
-
         <Router>
-          <Home themeToggler={themeToggler} />
+          <Home theme={theme} themeToggler={themeToggler} />
         </Router>
       </>
     </ThemeProvider>

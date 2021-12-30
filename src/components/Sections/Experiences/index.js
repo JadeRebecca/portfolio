@@ -26,17 +26,6 @@ const Experiences = ({ id, topLine, description }) => {
               <TopLine>{topLine}</TopLine>
               <Heading>Heading</Heading>
               <Subtitle>{description}</Subtitle>
-              <BtnWrap>
-                <Button
-                  to="home"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                  primary={true}
-                />
-              </BtnWrap>
             </TextWrapper>
           </Column1>
           <Column2>

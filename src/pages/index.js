@@ -9,7 +9,7 @@ import Work from '../components/Sections/Work'
 import Contact from '../components/Sections/Contact'
 import { about, experiences, work, contact } from '../components/Sections/Data'
 
-const Home = ({ themeToggler }) => {
+const Home = ({ theme, themeToggler }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => {
@@ -18,7 +18,7 @@ const Home = ({ themeToggler }) => {
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} themeToggler={themeToggler} />
+      <Navbar toggle={toggle} theme={theme} themeToggler={themeToggler} />
       <HeroSection />
       <About {...about} />
       <Experiences {...experiences} />

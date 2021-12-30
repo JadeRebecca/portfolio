@@ -1,6 +1,7 @@
 import React from 'react'
 import { animateScroll as scroll } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
+import ThemeToggler from '../ThemeToggler'
 import {
   Nav,
   NavLogo,
@@ -14,7 +15,7 @@ import {
 } from './NavbarElement'
 import ButtonLink from '../Button'
 
-const Navbar = ({ toggle, themeToggler }) => {
+const Navbar = ({ toggle, theme, themeToggler }) => {
   const toggleHome = () => {
     scroll.scrollToTop()
   }
@@ -84,7 +85,7 @@ const Navbar = ({ toggle, themeToggler }) => {
           <NavBtn>
             <ButtonLink text="Resume" />
           </NavBtn>
-          <button onClick={themeToggler}>Switch Theme</button>
+          <ThemeToggler theme={theme} toggleTheme={themeToggler} />
         </NavbarContainer>
       </Nav>
     </>
