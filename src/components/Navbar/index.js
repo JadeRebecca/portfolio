@@ -12,7 +12,8 @@ import {
   NavLink,
   NavBtn,
 } from './NavbarElement'
-import ButtonLink from '../Button'
+import Btn from '../Button'
+import Pdf from '../../docs/resume.pdf'
 
 const Navbar = ({ toggle, theme, themeToggler }) => {
   const toggleHome = () => {
@@ -37,7 +38,7 @@ const Navbar = ({ toggle, theme, themeToggler }) => {
                 offset={-80}
                 duration={500}
               >
-                About
+                A propos
               </NavLink>
             </NavItem>
             <NavItem>
@@ -48,7 +49,7 @@ const Navbar = ({ toggle, theme, themeToggler }) => {
                 offset={-80}
                 duration={500}
               >
-                Experience
+                Experiences
               </NavLink>
             </NavItem>
             <NavItem>
@@ -59,7 +60,18 @@ const Navbar = ({ toggle, theme, themeToggler }) => {
                 offset={-80}
                 duration={500}
               >
-                Work
+                Réalisations
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+              >
+                Compétences
               </NavLink>
             </NavItem>
             <NavItem>
@@ -75,9 +87,11 @@ const Navbar = ({ toggle, theme, themeToggler }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <ButtonLink text="Resume" />
+            <Btn href={Pdf} target="_blank" text="Resume" />
           </NavBtn>
-          <ThemeToggler theme={theme} toggleTheme={themeToggler} />
+          <NavBtn>
+            <ThemeToggler theme={theme} toggleTheme={themeToggler} />
+          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>

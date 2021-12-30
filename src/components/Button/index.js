@@ -1,8 +1,12 @@
 import React from 'react'
-import { BtnLink } from './ButtonElements'
+import { Btn } from './ButtonElements'
 
-const ButtonLink = ({ text }) => {
-  return <BtnLink to="contact">{text}</BtnLink>
+const ButtonLink = ({ href, text }) => {
+  return (
+    <Btn href={href} target="_blank">
+      {text}
+    </Btn>
+  )
 }
 
 export default ButtonLink

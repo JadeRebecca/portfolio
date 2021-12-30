@@ -80,7 +80,13 @@ export const NavLink = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid ${({ theme }) => theme.main};
+    border-bottom: 4px solid ${({ theme }) => theme.main};
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover {
+    color: ${({ theme }) => theme.main};
+    transition: 0.2s ease-in-out;
   }
 `
 export const NavBtn = styled.nav`

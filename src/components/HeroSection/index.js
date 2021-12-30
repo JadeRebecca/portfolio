@@ -12,14 +12,11 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroContent>
-        <HeroP1>Hi, my name is</HeroP1>
+        <HeroP1>Bonjour, je m'appelle</HeroP1>
         <HeroH1>Jade Dupont.</HeroH1>
-        <HeroH1>I'm a passionnated web developer.</HeroH1>
+        <HeroH1>Je suis une développeuse web passionnée.</HeroH1>
         <HeroP2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          J'ai 11 ans d'expérience digitale hybride tech & produit.
         </HeroP2>
       </HeroContent>
     </HeroContainer>

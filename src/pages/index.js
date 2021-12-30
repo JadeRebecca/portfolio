@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import About from '../components/Sections/About'
 import Experiences from '../components/Sections/Experiences'
 import Work from '../components/Sections/Work'
+import Skills from '../components/Sections/Skills'
 import Contact from '../components/Sections/Contact'
 import { about, experiences, work, contact } from '../components/Sections/Data'
 
@@ -23,6 +24,7 @@ const Home = ({ theme, themeToggler }) => {
       <About {...about} />
       <Experiences {...experiences} />
       <Work {...work} />
+      <Skills />
       <Contact {...contact} />
       <Footer />
     </>

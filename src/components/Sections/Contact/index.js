@@ -14,7 +14,7 @@ import {
   ImgWrap,
   Img,
 } from '../SectionElements'
-import ButtonLink from '../../Button'
+import Btn from '../../Button'
 import img from '../../../images/contact.svg'
 
 const Contact = ({ id, topLine, description }) => {
@@ -27,7 +27,11 @@ const Contact = ({ id, topLine, description }) => {
               <TopLine>{topLine}</TopLine>
               <Heading>Heading</Heading>
               <Subtitle>{description}</Subtitle>
-              <ButtonLink text="contact me!" />
+              <Btn
+                href="mailto:dupont.jade@gmail.com"
+                target="_blank"
+                text="contact me!"
+              />
             </TextWrapper>
           </Column1>
           <Column2>

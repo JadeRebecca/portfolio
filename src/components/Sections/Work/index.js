@@ -23,7 +23,7 @@ const Work = ({ id, topLine, description }) => {
         <InfoRow>
           <Column1>
             <TextWrapper>
-              <TopLine>{topLine}</TopLine>
+              <TopLine>Mes réalisations</TopLine>
               <Heading>Heading</Heading>
               <Subtitle>{description}</Subtitle>
             </TextWrapper>

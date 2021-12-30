@@ -23,9 +23,15 @@ const About = ({ id, topLine, description }) => {
         <InfoRow>
           <Column1>
             <TextWrapper>
-              <TopLine>{topLine}</TopLine>
-              <Heading>Heading</Heading>
-              <Subtitle>{description}</Subtitle>
+              <TopLine>A propos de moi</TopLine>
+              {/* <Heading>Heading</Heading> */}
+              <Subtitle>
+                Autonome et polyvalente, j'ai une bonne capacité d'adaptation.
+                Je sais être pédagogue, patiente et avoir le sens de l'écoute,
+                J'ai l'esprit d'équipe et favorise l'intelligence collective.
+                Dotée d'un esprit créatif et désireuse d'apprendre, j'aime
+                aborder de nouveaux projets.
+              </Subtitle>
             </TextWrapper>
           </Column1>
           <Column2>
