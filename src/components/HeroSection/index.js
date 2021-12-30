@@ -10,7 +10,7 @@ import {
 
 const HeroSection = () => {
   return (
-    <HeroContainer id="hero">
+    <HeroContainer>
       <HeroContent>
         <HeroP1>Hi, my name is</HeroP1>
         <HeroH1>Jade Dupont.</HeroH1>

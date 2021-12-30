@@ -3,7 +3,6 @@ import { Link as LinkS } from 'react-scroll'
 import styled from 'styled-components'
 
 export const Nav = styled.nav`
-  background: #0a192f;
   height: 80px;
   //   margin-top: -80px;
   display: flex;
@@ -15,8 +14,6 @@ export const Nav = styled.nav`
   z-index: 10;
   box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);
 }
-
-
 
   @media screen and (max-width: 960px) {
     transition: all 0.8s ease-in-out;
@@ -74,7 +71,6 @@ export const NavItem = styled.li`
   height: 80px;
 `
 export const NavLink = styled(LinkS)`
-  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -82,7 +78,7 @@ export const NavLink = styled(LinkS)`
   height: 100%;
   cursor: pointer;
 
-  &:active {
+  &.active {
     border-bottom: 3px solid #01bf71;
   }
 `

@@ -3,15 +3,13 @@ import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
 import Footer from '../components/Footer'
-import InfoSection from '../components/InfoSection'
-import {
-  about,
-  experiences,
-  work,
-  contact,
-} from '../components/InfoSection/Data'
+import About from '../components/Sections/About'
+import Experiences from '../components/Sections/Experiences'
+import Work from '../components/Sections/Work'
+import Contact from '../components/Sections/Contact'
+import { about, experiences, work, contact } from '../components/Sections/Data'
 
-const Home = () => {
+const Home = ({ themeToggler }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => {
@@ -20,12 +18,12 @@ const Home = () => {
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      <Navbar toggle={toggle} themeToggler={themeToggler} />
       <HeroSection />
-      <InfoSection {...about} />
-      <InfoSection {...experiences} />
-      <InfoSection {...work} />
-      <InfoSection {...contact} />
+      <About {...about} />
+      <Experiences {...experiences} />
+      <Work {...work} />
+      <Contact {...contact} />
       <Footer />
     </>
   )

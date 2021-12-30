@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
-  background: #0a192f;
+  // background: #0a192f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@ export const HeroP1 = styled.p`
 `
 
 export const HeroH1 = styled.h1`
-  color: #fff;
+  // color: #fff;
   font-size: 48px;
   text-align: left;
 
@@ -64,7 +64,7 @@ export const HeroH1 = styled.h1`
 `
 export const HeroP2 = styled.p`
   margin-top: 24px;
-  color: #fff;
+  // color: #fff;
   font-size: 24px;
   text-align: left;
   max-width: 600px;

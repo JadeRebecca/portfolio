@@ -1,4 +1,5 @@
 import React from 'react'
+import { animateScroll as scroll } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
 import {
   Nav,
@@ -11,18 +12,23 @@ import {
   NavBtn,
   NavBtnLink,
 } from './NavbarElement'
+import ButtonLink from '../Button'
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, themeToggler }) => {
+  const toggleHome = () => {
+    scroll.scrollToTop()
+  }
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo
-            to="hero"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            to="/"
+            onClick={toggleHome}
+            // spy={true}
+            // smooth={true}
+            // offset={-80}
+            // duration={500}
           >
             JD
           </NavLogo>
@@ -35,7 +41,7 @@ const Navbar = ({ toggle }) => {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-80}
                 duration={500}
               >
                 About
@@ -46,7 +52,7 @@ const Navbar = ({ toggle }) => {
                 to="experiences"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-80}
                 duration={500}
               >
                 Experience
@@ -57,7 +63,7 @@ const Navbar = ({ toggle }) => {
                 to="work"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-80}
                 duration={500}
               >
                 Work
@@ -68,7 +74,7 @@ const Navbar = ({ toggle }) => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-80}
                 duration={500}
               >
                 Contact
@@ -76,8 +82,9 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="resume">Resume</NavBtnLink>
+            <ButtonLink text="Resume" />
           </NavBtn>
+          <button onClick={themeToggler}>Switch Theme</button>
         </NavbarContainer>
       </Nav>
     </>

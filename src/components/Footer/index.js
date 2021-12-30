@@ -1,7 +1,15 @@
 import React from 'react'
+import { FooterContainer, Link } from './FooterElements'
 
 const Footer = () => {
-  return <div>Build by Jade Dupont with React JS</div>
+  const handleClick = () => {
+    window.open('https://github.com/JadeRebecca/portfolio')
+  }
+  return (
+    <FooterContainer>
+      <Link onClick={handleClick}>Build by Jade Dupont with React JS</Link>
+    </FooterContainer>
+  )
 }
 
 export default Footer
