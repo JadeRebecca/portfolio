@@ -1,39 +1,51 @@
 import React from 'react'
-import { Button } from 'react-scroll'
+import { works } from './Data'
+
 import {
   InfoContainer,
   InfoWrapper,
   InfoRow,
   Column1,
   TextWrapper,
-  TopLine,
-  Heading,
-  Subtitle,
-  BtnWrap,
+  Title,
   Column2,
-  ImgWrap,
-  Img,
 } from '../SectionElements'
-import img from '../../../images/remote.svg'
 
-const Work = ({ id, topLine, description }) => {
+import WorkItem from './WorkItem'
+import { WorksWrapper } from './WorkElements'
+
+const Work = () => {
   return (
-    <InfoContainer id={id}>
+    <InfoContainer id="work">
       <InfoWrapper>
         <InfoRow>
-          <Column1>
-            <TextWrapper>
-              <TopLine>Mes réalisations</TopLine>
-              <Heading>Heading</Heading>
-              <Subtitle>{description}</Subtitle>
-            </TextWrapper>
-          </Column1>
           <Column2>
-            <ImgWrap>
-              <Img src={img} alt="digital work" />
-            </ImgWrap>
+            <TextWrapper>
+              <Title>Mes réalisations</Title>
+              {/* <Heading>Heading</Heading> */}
+              {/* <Subtitle></Subtitle> */}
+            </TextWrapper>
           </Column2>
+          <Column1>
+            {/* <ImgWrap>
+              <Img src={img} alt="digital work" />
+            </ImgWrap> */}
+          </Column1>
         </InfoRow>
+        <WorksWrapper>
+          {works.map((item, index) => (
+            <WorkItem
+              order={index % 2 === 0 ? 1 : 2}
+              key={`work-${item.id}`}
+              id={item.id}
+              title={item.title}
+              category={item.category}
+              description={item.description}
+              images={item.images}
+              technos={item.technos}
+            />
+          ))}
+        </WorksWrapper>
       </InfoWrapper>
     </InfoContainer>
   )

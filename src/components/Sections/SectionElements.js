@@ -11,12 +11,13 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  /*height: 860px;*/
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
+  padding: 100px 24px;
+
   justify-content: center;
 `
 export const InfoRow = styled.div`
@@ -46,7 +47,7 @@ export const TextWrapper = styled.div`
   padding-top: 0;
   padding-bottom: 60px;
 `
-export const TopLine = styled.p`
+export const Title = styled.h2`
   color: #01bf71;
   font-size: 16px;
   line-height: 16px;
@@ -56,7 +57,7 @@ export const TopLine = styled.p`
   margin-bottom: 16px;
 `
 
-export const Heading = styled.h1`
+export const Heading = styled.p`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;

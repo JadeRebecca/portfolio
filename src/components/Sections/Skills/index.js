@@ -5,24 +5,22 @@ import {
   InfoRow,
   Column1,
   TextWrapper,
-  TopLine,
-  Heading,
+  Title,
   Subtitle,
-  BtnWrap,
   Column2,
   ImgWrap,
   Img,
 } from '../SectionElements'
 import img from '../../../images/remote.svg'
 
-const Skills = ({ id, topLine, description }) => {
+const Skills = () => {
   return (
     <InfoContainer id="skills">
       <InfoWrapper>
         <InfoRow>
           <Column1>
             <TextWrapper>
-              <TopLine>Mes compétences</TopLine>
+              <Title>Mes compétences</Title>
               {/* <Heading>Heading</Heading> */}
               <Subtitle>
                 FRONT-END : HTML, CSS, Bootstrap, Material UI, Javascript/

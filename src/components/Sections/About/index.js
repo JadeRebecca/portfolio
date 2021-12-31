@@ -1,30 +1,26 @@
 import React from 'react'
-import { Button } from 'react-scroll'
 import {
   InfoContainer,
   InfoWrapper,
   InfoRow,
   Column1,
   TextWrapper,
-  TopLine,
-  Heading,
+  Title,
   Subtitle,
-  BtnWrap,
   Column2,
   ImgWrap,
   Img,
 } from '../SectionElements'
 import img from '../../../images/remote.svg'
 
-const About = ({ id, topLine, description }) => {
+const About = () => {
   return (
-    <InfoContainer id={id}>
+    <InfoContainer id="about">
       <InfoWrapper>
         <InfoRow>
           <Column1>
             <TextWrapper>
-              <TopLine>A propos de moi</TopLine>
-              {/* <Heading>Heading</Heading> */}
+              <Title>A propos de moi</Title>
               <Subtitle>
                 Autonome et polyvalente, j'ai une bonne capacité d'adaptation.
                 Je sais être pédagogue, patiente et avoir le sens de l'écoute,

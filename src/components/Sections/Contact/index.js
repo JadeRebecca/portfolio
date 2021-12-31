@@ -6,10 +6,9 @@ import {
   InfoRow,
   Column1,
   TextWrapper,
-  TopLine,
+  Title,
   Heading,
   Subtitle,
-  BtnWrap,
   Column2,
   ImgWrap,
   Img,
@@ -17,16 +16,19 @@ import {
 import Btn from '../../Button'
 import img from '../../../images/contact.svg'
 
-const Contact = ({ id, topLine, description }) => {
+const Contact = () => {
   return (
-    <InfoContainer id={id}>
+    <InfoContainer id="contact">
       <InfoWrapper>
         <InfoRow>
           <Column1>
             <TextWrapper>
-              <TopLine>{topLine}</TopLine>
+              <Title>Contact</Title>
               <Heading>Heading</Heading>
-              <Subtitle>{description}</Subtitle>
+              <Subtitle>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Subtitle>
               <Btn
                 href="mailto:dupont.jade@gmail.com"
                 target="_blank"

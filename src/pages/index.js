@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
+import Layout from '../components/Layout'
 import HeroSection from '../components/HeroSection'
 import Footer from '../components/Footer'
 import About from '../components/Sections/About'
@@ -8,7 +9,6 @@ import Experiences from '../components/Sections/Experiences'
 import Work from '../components/Sections/Work'
 import Skills from '../components/Sections/Skills'
 import Contact from '../components/Sections/Contact'
-import { about, experiences, work, contact } from '../components/Sections/Data'
 
 const Home = ({ theme, themeToggler }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,12 +20,14 @@ const Home = ({ theme, themeToggler }) => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} theme={theme} themeToggler={themeToggler} />
-      <HeroSection />
-      <About {...about} />
-      <Experiences {...experiences} />
-      <Work {...work} />
-      <Skills />
-      <Contact {...contact} />
+      <Layout>
+        <HeroSection />
+        <About />
+        <Experiences />
+        <Work />
+        <Skills />
+        <Contact />
+      </Layout>
       <Footer />
     </>
   )
