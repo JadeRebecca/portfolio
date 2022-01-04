@@ -4,7 +4,6 @@ export const WorksWrapper = styled.div``
 
 export const ItemWrapper = styled.div`
   display: flex;
-
   gap: 30px;
   margin-bottom: 80px;
   @media screen and (max-width: 768px) {

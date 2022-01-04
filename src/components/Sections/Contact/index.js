@@ -20,10 +20,10 @@ const Contact = () => {
   return (
     <InfoContainer id="contact">
       <InfoWrapper>
+        <Title>04. Contact</Title>
         <InfoRow>
           <Column1>
             <TextWrapper>
-              <Title>Contact</Title>
               <Heading>Heading</Heading>
               <Subtitle>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

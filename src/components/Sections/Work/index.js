@@ -18,10 +18,10 @@ const Work = () => {
   return (
     <InfoContainer id="work">
       <InfoWrapper>
+        <Title>02. Mes réalisations</Title>
         <InfoRow>
           <Column2>
             <TextWrapper>
-              <Title>Mes réalisations</Title>
               {/* <Heading>Heading</Heading> */}
               {/* <Subtitle></Subtitle> */}
             </TextWrapper>

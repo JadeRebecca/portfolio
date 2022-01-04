@@ -1,5 +1,35 @@
 import styled from 'styled-components'
 
+export const ExperienceContainer = styled.div`
+  display: flex;
+  gap: 30px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+export const CompanyContainer = styled.div``
+export const DetailContainer = styled.div`
+  text-align: justify;
+`
+
+export const TypeWrapper = styled.div`
+  margin-bottom: 24px;
+  display: flex;
+  gap: 12px;
+`
+
+export const Type = styled.span`
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+  }
+`
+
 export const CompanyList = styled.ul`
   list-style: none;
 `

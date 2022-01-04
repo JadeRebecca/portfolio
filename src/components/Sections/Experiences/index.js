@@ -11,6 +11,11 @@ import {
   Column2,
 } from '../SectionElements'
 import {
+  ExperienceContainer,
+  CompanyContainer,
+  DetailContainer,
+  Type,
+  TypeWrapper,
   CompanyList,
   CompanyItem,
   Title as ExperienceTitle,
@@ -54,15 +59,18 @@ const Experiences = () => {
   return (
     <InfoContainer id="experiences">
       <InfoWrapper>
-        <InfoRow>
-          <Column1>
+        <Title className="left">01. Mes expériences professionnelles</Title>
+        <ExperienceContainer>
+          <CompanyContainer>
             <TextWrapper>
-              <Title>Mes expériences professionnelles</Title>
-              <Heading>Digitales</Heading>
+              <TypeWrapper>
+                <Type>Digitales</Type>
+                <Type>Autres</Type>
+              </TypeWrapper>
               <CompanyList>{companyList}</CompanyList>
             </TextWrapper>
-          </Column1>
-          <Column2>
+          </CompanyContainer>
+          <DetailContainer>
             <ExperienceTitle>
               {info.title}{' '}
               <CompanyLink href={info.website} target="_blank">
@@ -75,8 +83,8 @@ const Experiences = () => {
                 <DescriptionItem key={index}>{item}</DescriptionItem>
               ))}
             </Description>
-          </Column2>
-        </InfoRow>
+          </DetailContainer>
+        </ExperienceContainer>
       </InfoWrapper>
     </InfoContainer>
   )

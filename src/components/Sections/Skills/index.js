@@ -17,29 +17,33 @@ const Skills = () => {
   return (
     <InfoContainer id="skills">
       <InfoWrapper>
+        <Title className="right">03. Mes compétences</Title>
         <InfoRow>
           <Column1>
             <TextWrapper>
-              <Title>Mes compétences</Title>
-              {/* <Heading>Heading</Heading> */}
+              <h3>Hard skills</h3>
               <Subtitle>
                 FRONT-END : HTML, CSS, Bootstrap, Material UI, Javascript/
-                React. BACK-END : Node.js, PHP, Python/Django&Flask, SQL.
-                ORGANISATION & STRATEGIE : Méthode Scrum, Kanban, OKR, vision
-                produit, réalisation de roadmap REDACTIONNELLES : expression des
-                besoins, cahier des charges, user story, manuel utilisateur,
-                support de formation, manuel scolaire. OUTILS : VSCode,
-                Git/GitHub, Jira, Azure DevOps, Trello, Google Analytics.
-                RELATIONNELLES : support, formation, accompagnement, assistance,
-                dépannage des utilisateurs. Pilotage de projet, gestion de
-                petite équipe. LINGUISTIQUES : anglais niveau intermédiaire
+                React.
+                <br />
+                BACK-END : Node.js, PHP, Python/Django&Flask, SQL. ORGANISATION
+                & STRATEGIE : Méthode Scrum, Kanban, OKR, vision produit,
+                réalisation de roadmap
               </Subtitle>
             </TextWrapper>
           </Column1>
           <Column2>
-            <ImgWrap>
-              <Img src={img} alt="remote worker" />
-            </ImgWrap>
+            <h3>Soft skills</h3>
+            <Subtitle>
+              STRATEGIE : Méthode Scrum, Kanban, OKR, vision produit,
+              réalisation de roadmap REDACTIONNELLES : expression des besoins,
+              cahier des charges, user story, manuel utilisateur, support de
+              formation, manuel scolaire. OUTILS : VSCode, Git/GitHub, Jira,
+              Azure DevOps, Trello, Google Analytics. RELATIONNELLES : support,
+              formation, accompagnement, assistance, dépannage des utilisateurs.
+              Pilotage de projet, gestion de petite équipe. LINGUISTIQUES :
+              anglais niveau intermédiaire
+            </Subtitle>
           </Column2>
         </InfoRow>
       </InfoWrapper>

@@ -47,7 +47,17 @@ export const TextWrapper = styled.div`
   padding-top: 0;
   padding-bottom: 60px;
 `
-export const Title = styled.h2`
+export const Title = styled.h2.attrs((props) => ({
+  className: props.className,
+}))`
+  &.left {
+    text-align: left;
+  }
+  &.right {
+    text-align: right;
+  }
+
+  text-align: center;
   color: #01bf71;
   font-size: 16px;
   line-height: 16px;
