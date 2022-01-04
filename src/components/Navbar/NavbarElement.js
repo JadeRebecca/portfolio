@@ -2,7 +2,7 @@ import { Link as LinkS } from 'react-scroll'
 import styled from 'styled-components'
 
 export const Nav = styled.nav`
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.mainBackground};
   height: 80px;
   //   margin-top: -80px;
   display: flex;
@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);
+  box-shadow: 0 10px 30px -10px ${({ theme }) => theme.shadow};
 }
 
   @media screen and (max-width: 960px) {
@@ -21,7 +21,7 @@ export const Nav = styled.nav`
 `
 
 export const NavbarContainer = styled.div`
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.mainBackground};
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -81,8 +81,10 @@ export const NavLink = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  padding-bottom: 4px;
 
   &.active {
+    padding-bottom: 0px;
     border-bottom: 4px solid ${({ theme }) => theme.main};
     transition: 0.3s ease-in-out;
   }
