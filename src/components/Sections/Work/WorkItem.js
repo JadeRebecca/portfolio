@@ -1,8 +1,8 @@
 import React from 'react'
-import img from '../../../images/ipad.png'
+import img from '../../../images/work/work_sezam.png'
 import {
   ItemWrapper,
-  ItemInfo,
+  InfoWrapper,
   Category,
   Title,
   Description,
@@ -15,7 +15,7 @@ import {
 const WorkItem = ({ order, title, category, description, images, technos }) => {
   return (
     <ItemWrapper>
-      <ItemInfo order={order}>
+      <InfoWrapper order={order}>
         <Category>{category}</Category>
         <Title>{title}</Title>
         <Description>{description}</Description>
@@ -24,9 +24,12 @@ const WorkItem = ({ order, title, category, description, images, technos }) => {
             <Techno key={`${item}-${index}`}>{item}</Techno>
           ))}
         </TechnoWrapper>
-      </ItemInfo>
+      </InfoWrapper>
       <ItemImageWrapper order={order === 1 ? 2 : 1}>
-        <ItemImage src={img} alt="webapp screenshot" />
+        <ItemImage
+          src={`${process.env.PUBLIC_URL}/images/work/${images[0]}`}
+          alt="webapp screenshot"
+        />
       </ItemImageWrapper>
     </ItemWrapper>
   )

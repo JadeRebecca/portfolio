@@ -9,7 +9,7 @@ export const works = [
     Création de la base de donnée SQL.
     Développement du front-end l'application web en JavaScript : ReactJS, Material-UI
     Développement du back-end, création d'une API : Node.js (Express.js), MySQL`,
-    images: ['../../../images/ipad.png'],
+    images: ['work_sezam.png'],
     technos: ['React', 'Node', 'MaterialUI'],
   },
   {
@@ -18,7 +18,7 @@ export const works = [
     title: `Création d'une application web sur mesure - gestion des moyens généraux d'un groupe d'ERP`,
     period: '2020',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    images: ['images/ipad.png'],
+    images: ['work_sezam.png'],
     technos: ['Php', 'HTML', 'Bootstrap'],
   },
   {
@@ -27,7 +27,7 @@ export const works = [
     title: `Création d'un site web de communication nutrition/yoga (Yuzuki)`,
     period: '2020',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    images: ['images/ipad.png'],
+    images: ['work_yuzuki.png'],
     technos: ['HTML', 'CSS'],
   },
   {
@@ -36,7 +36,7 @@ export const works = [
     title: `Création d'une application web sur mesure - commerce local`,
     period: '2020',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    images: ['images/ipad.png'],
+    images: ['work_sezam.png'],
     technos: ['Django', 'Bootstrap'],
   },
   {
@@ -49,7 +49,7 @@ export const works = [
     Création de la base de donnée SQL.
     Développement de l'application web : HTML, CSS, Bootstrap, JavaScript, PHP, MySQL
     Pilotage du projet en mode agile`,
-    images: ['images/ipad.png'],
+    images: ['work_sezam.png'],
     technos: [
       'HTML',
       'CSS',

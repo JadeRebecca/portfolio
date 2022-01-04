@@ -31,7 +31,7 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `
 
-export const NavLogo = styled(LinkS)`
+export const NavLogoLink = styled(LinkS)`
   color: ${({ theme }) => theme.main};
   justify-self: flex-start;
   cursor: pointer;
@@ -41,6 +41,9 @@ export const NavLogo = styled(LinkS)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+`
+export const NavLogo = styled.img`
+  height: 80%;
 `
 export const MobileIcon = styled.div`
   display: none;

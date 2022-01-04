@@ -4,6 +4,7 @@ import { FaBars } from 'react-icons/fa'
 import ThemeToggler from '../ThemeToggler'
 import {
   Nav,
+  NavLogoLink,
   NavLogo,
   NavbarContainer,
   MobileIcon,
@@ -14,6 +15,7 @@ import {
 } from './NavbarElement'
 import Btn from '../Button'
 import Pdf from '../../docs/resume.pdf'
+import logo from '../../images/logo/green_logo.png'
 
 const Navbar = ({ toggle, theme, themeToggler }) => {
   const toggleHome = () => {
@@ -23,9 +25,9 @@ const Navbar = ({ toggle, theme, themeToggler }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/" onClick={toggleHome}>
-            JD
-          </NavLogo>
+          <NavLogoLink to="/" onClick={toggleHome}>
+            <NavLogo src={logo} alt="JD logo" />
+          </NavLogoLink>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
