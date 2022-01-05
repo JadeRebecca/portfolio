@@ -4,7 +4,7 @@ export const ExperienceContainer = styled.div`
   display: flex;
   gap: 30px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     flex-direction: column;
   }
 `
@@ -25,7 +25,7 @@ export const Type = styled.span`
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
     font-size: 20px;
   }
 `

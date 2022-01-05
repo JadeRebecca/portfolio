@@ -48,7 +48,7 @@ export const NavLogo = styled.img`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     color: ${({ theme }) => theme.main};
     display: block;
     position: absolute;
@@ -67,7 +67,7 @@ export const NavMenu = styled.ul`
   text-align: center;
   margin-right: -22px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     display: none;
   }
 `
@@ -98,7 +98,7 @@ export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     display: none;
   }
 `

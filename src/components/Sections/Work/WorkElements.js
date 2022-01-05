@@ -6,7 +6,7 @@ export const ItemWrapper = styled.div`
   display: flex;
   gap: 30px;
   margin-bottom: 80px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     flex-direction: column;
   }
 `
@@ -20,7 +20,7 @@ export const InfoWrapper = styled.div`
   order: ${({ order }) => order};
   z-index: 2;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     width: 100%;
     order: 1;
     align-items: start;
@@ -40,14 +40,14 @@ export const Title = styled.h3`
 `
 export const Description = styled.div`
   background-color: ${({ theme }) => theme.mainLight};
-  border-radius: 8px;
+  border-radius: ${({ theme }) => theme.borderRadius}px;
   padding: 20px;
   color: ${({ theme }) => theme.color};
   font-size: 16px;
   line-height: 18px;
   width: 130%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     width: 100%;
   }
 `
@@ -69,7 +69,7 @@ export const ItemImageWrapper = styled.div`
     transition: 0.3s ease-in-out;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     width: 100%;
     order: 2;
   }

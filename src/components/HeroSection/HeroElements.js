@@ -28,11 +28,11 @@ export const HeroP1 = styled.p`
   text-align: left;
   max-width: 600px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     font-size: 14px;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
     font-size: 12px;
   }
 `
@@ -42,11 +42,11 @@ export const HeroH1 = styled.h1`
   font-size: 48px;
   text-align: left;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     font-size: 40px;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
     font-size: 32px;
   }
 `
@@ -57,11 +57,11 @@ export const HeroP2 = styled.p`
   text-align: left;
   max-width: 600px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     font-size: 24px;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
     font-size: 18px;
   }
 `
