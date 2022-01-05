@@ -15,10 +15,10 @@ export const works = [
   {
     id: 2,
     category: `Web App`,
-    title: `Création d'une application web sur mesure - gestion des moyens généraux d'un groupe d'ERP`,
+    title: `Création d'une application web sur mesure - gestion des moyens généraux d'un groupe d'ERP (MON GENERAL)`,
     period: '2020',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    images: ['work_sezam.png'],
+    images: ['work_default.png'],
     technos: ['Php', 'HTML', 'Bootstrap'],
   },
   {
@@ -28,28 +28,48 @@ export const works = [
     period: '2020',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     images: ['work_yuzuki.png'],
-    technos: ['HTML', 'CSS'],
+    technos: ['HTML', 'CSS', 'JS'],
   },
   {
     id: 4,
     category: `Web App`,
-    title: `Création d'une application web sur mesure - commerce local`,
+    title: `Création d'une application web sur mesure - Local business`,
+    link: `https://www.youtube.com/watch?v=naFuUY8hh4U`,
     period: '2020',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    images: ['work_sezam.png'],
+    images: ['work_local.png'],
     technos: ['Django', 'Bootstrap'],
   },
   {
     id: 5,
     category: `Web App`,
-    title: `Création d'une application web sur mesure - gestion administrative et financière d'une entreprise`,
+    title: `Création d'une application web sur mesure - Auction`,
+    link: `https://www.youtube.com/watch?v=Kt73sfMSHyw`,
+    period: '2020',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    images: ['work_auction.png'],
+    technos: ['Django', 'Bootstrap'],
+  },
+  {
+    id: 6,
+    category: `Web Site`,
+    title: `Création d'un site web de communication pour un Surf Camp`,
+    period: '2020',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    images: ['work_surfcamp.png'],
+    technos: ['HTML', 'CSS', 'JS'],
+  },
+  {
+    id: 7,
+    category: `Web App`,
+    title: `Création d'une application web sur mesure - gestion administrative et financière d'une entreprise (GINA)`,
     period: '2017',
     description: `Dans le cadre de la création d'une start-up, création d'une application web sur mesure répondant aux besoins de gestion administrative et financière de l'entreprise.
     Récolte des besoins client, proposition et validation de workflow.  
     Création de la base de donnée SQL.
     Développement de l'application web : HTML, CSS, Bootstrap, JavaScript, PHP, MySQL
     Pilotage du projet en mode agile`,
-    images: ['work_sezam.png'],
+    images: ['work_default.png'],
     technos: [
       'HTML',
       'CSS',
@@ -59,5 +79,15 @@ export const works = [
       'MySQL',
       'AzureCloud',
     ],
+  },
+  {
+    id: 8,
+    category: `Web Site`,
+    title: `Ancienne version de mon CV`,
+    link: `D:Documents-3-FORMATION-CEFIM-presentation`,
+    period: '2019',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    images: ['work_CV.png'],
+    technos: ['HTML', 'CSS'],
   },
 ]
