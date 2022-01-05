@@ -5,7 +5,7 @@ export const BtnLink = styled(LinkR)`
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.main};
   border: 1.4px solid ${({ theme }) => theme.main};
-  border-radius: 10px;
+  border-radius: ${({ theme }) => theme.borderRadius}px;
   white-space: nowrap;
   padding: 10px 22px;
   font-size: 16px;
@@ -24,7 +24,7 @@ export const Btn = styled.a`
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.main};
   border: 1.4px solid ${({ theme }) => theme.main};
-  border-radius: 10px;
+  border-radius: ${({ theme }) => theme.borderRadius}px;
   white-space: nowrap;
   padding: 10px 22px;
   font-size: 16px;

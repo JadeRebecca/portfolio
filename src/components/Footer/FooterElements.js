@@ -13,3 +13,7 @@ export const Link = styled.p`
     color: ${({ theme }) => theme.main};
   }
 `
+export const LinkEl = styled.div``
+export const IconWrapper = styled.span`
+  padding: 5px;
+`
