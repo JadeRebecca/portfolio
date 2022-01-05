@@ -1,4 +1,14 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const pFadeIn = keyframes`
+  0% {
+    transform: translateY(100%);
+  }
+100%
+   {
+    transform: translateY(0%);
+  }
+`
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.background};
@@ -20,6 +30,25 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: left;
+
+  > p {
+    overflow: hidden;
+
+    &:nth-child(2) * {
+      animation-delay: 300ms;
+    }
+    &:nth-child(3) * {
+      animation-delay: 600ms;
+    }
+    &:nth-child(4) * {
+      animation-delay: 1100ms;
+    }
+
+    > * {
+      animation: ${pFadeIn} 800ms ease forwards;
+      transform: translateY(100%);
+    }
+  }
 `
 export const HeroP1 = styled.p`
   margin-top: 24px;
