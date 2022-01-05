@@ -9,9 +9,8 @@ export const ExperienceContainer = styled.div`
   }
 `
 export const CompanyContainer = styled.div``
-export const DetailContainer = styled.div`
-  text-align: justify;
-`
+
+export const DetailContainer = styled.div``
 
 export const TypeWrapper = styled.div`
   margin-bottom: 24px;
@@ -23,7 +22,7 @@ export const Type = styled.span`
   font-size: 28px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+  color: ${({ theme }) => theme.text};
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
     font-size: 20px;
@@ -70,6 +69,7 @@ export const Period = styled.p`
 
 export const Description = styled.ul`
   list-style: none;
+  text-align: justify;
 `
 
 export const DescriptionItem = styled.li`

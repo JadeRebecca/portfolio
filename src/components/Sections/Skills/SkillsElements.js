@@ -1,11 +1,32 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const divFadeIn = keyframes`
+  0% {
+    transform: translateY(100%);
+  }
+100%
+   {
+    transform: translateY(0%);
+  }
+`
 
 export const SkillsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 20px;
+
+  &.hidden {
+    display: none;
+  }
+
+  &.goAnimation {
+    > div {
+      animation: ${divFadeIn} 1000ms ease forwards;
+    }
+  }
 `
+
 export const SkillCol = styled.div`
   //   background: red;
   padding: 15px;

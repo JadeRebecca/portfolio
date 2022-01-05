@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { useIntersection } from '../../../hooks/useIntersection'
+import { useRef } from 'react'
 import { InfoContainer, InfoWrapper, Title } from '../SectionElements'
 import {
   SkillsContainer,
@@ -9,11 +11,22 @@ import {
 // import strategyIcon from '../../images/icons/strategy.png'
 
 const Skills = () => {
+  const [animation, setAnimation] = useState(false)
+  const ref = useRef()
+  const inViewport = useIntersection(ref, '0px 0px -500px 0px')
+
+  useEffect(() => {
+    if (inViewport) {
+      console.log('in viewport:', ref.current)
+      setAnimation(true)
+    }
+  }, [inViewport])
+
   return (
-    <InfoContainer id="skills">
+    <InfoContainer id="skills" ref={ref}>
       <InfoWrapper>
         <Title className="right">03. Mes compétences</Title>
-        <SkillsContainer>
+        <SkillsContainer className={animation ? 'goAnimation' : 'hidden'}>
           <SkillCol>
             <CategoryTitle>Tech</CategoryTitle>
             <SkillsDescription>
