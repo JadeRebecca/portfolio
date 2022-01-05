@@ -2,13 +2,8 @@ import React, { useState } from 'react'
 import {
   InfoContainer,
   InfoWrapper,
-  InfoRow,
-  Column1,
   TextWrapper,
   Title,
-  Heading,
-  Subtitle,
-  Column2,
 } from '../SectionElements'
 import {
   ExperienceContainer,

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from 'react-scroll'
 import {
   InfoContainer,
   InfoWrapper,
@@ -15,12 +14,16 @@ import {
 } from '../SectionElements'
 import Btn from '../../Button'
 import img from '../../../images/contact.svg'
+import { HiChevronDoubleRight } from 'react-icons/hi'
+import { HiOutlineMail } from 'react-icons/hi'
 
 const Contact = () => {
   return (
     <InfoContainer id="contact">
       <InfoWrapper>
-        <Title>04. Contact</Title>
+        <Title>
+          <HiOutlineMail size={20} /> Contact
+        </Title>
         <InfoRow>
           <Column1>
             <TextWrapper>

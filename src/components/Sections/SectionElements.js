@@ -7,6 +7,7 @@ export const InfoContainer = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     padding: 100px 0;
   }
+  min-height: 700px;
 `
 export const InfoWrapper = styled.div`
   display: grid;
@@ -64,7 +65,7 @@ export const Title = styled.h2.attrs((props) => ({
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 26px;
 `
 
 export const Heading = styled.p`

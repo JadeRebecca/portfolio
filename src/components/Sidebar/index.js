@@ -9,7 +9,7 @@ import {
   SidebarWrapper,
   SideBtnWrap,
 } from './SidebarElements'
-// import { }
+
 const Sidebar = ({ toggle, isOpen }) => {
   return (
     <SidebarContainer isOpen={isOpen}>

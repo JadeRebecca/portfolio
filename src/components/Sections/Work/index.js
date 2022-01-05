@@ -19,19 +19,7 @@ const Work = () => {
     <InfoContainer id="work">
       <InfoWrapper>
         <Title>02. Mes réalisations</Title>
-        <InfoRow>
-          <Column2>
-            <TextWrapper>
-              {/* <Heading>Heading</Heading> */}
-              {/* <Subtitle></Subtitle> */}
-            </TextWrapper>
-          </Column2>
-          <Column1>
-            {/* <ImgWrap>
-              <Img src={img} alt="digital work" />
-            </ImgWrap> */}
-          </Column1>
-        </InfoRow>
+
         <WorksWrapper>
           {works.map((item, index) => (
             <WorkItem
