@@ -51,12 +51,12 @@ export const SkillCol = styled.div`
   }
 `
 
-export const CategoryTitle = styled.h3`
-  font-size: 20px;
-  text-transform: uppercase;
-  text-decoration: underline ${({ theme }) => theme.main};
-  text-decoration-thickness: 3px;
-`
+// export const CategoryTitle = styled.h3`
+//   font-size: 20px;
+//   text-transform: uppercase;
+//   text-decoration: underline ${({ theme }) => theme.main};
+//   text-decoration-thickness: 3px;
+// `
 
 export const SkillsDescription = styled.p`
   margin-top: 10px;

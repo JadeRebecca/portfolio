@@ -32,12 +32,12 @@ export const Category = styled.p`
   font-size: 18px;
   line-height: 32px;
 `
-export const Title = styled.h3`
-  color: ${({ theme }) => theme.color};
-  font-size: 20px;
-  line-height: 26px;
-  margin-bottom: 12px;
-`
+// export const WorkTitle = styled.h3`
+//   color: ${({ theme }) => theme.color};
+//   font-size: 20px;
+//   line-height: 26px;
+//   margin-bottom: 12px;
+// `
 export const Description = styled.div`
   background-color: ${({ theme }) => theme.mainLight};
   border-radius: ${({ theme }) => theme.borderRadius}px;

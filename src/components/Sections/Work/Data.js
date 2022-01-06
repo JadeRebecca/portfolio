@@ -89,6 +89,7 @@ export const works = [
       'CSS',
       'Bootstrap',
       'JavaScript',
+      'Twig',
       'PHP',
       'MySQL',
       'AzureCloud',

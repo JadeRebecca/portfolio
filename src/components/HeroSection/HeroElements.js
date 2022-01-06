@@ -27,7 +27,7 @@ export const HeroContainer = styled.div`
   }
 `
 
-export const HeroContent = styled.div`
+export const HeroContent = styled.h1`
   z-index: 3;
   max-width: 1200px;
   position: absolute;
@@ -55,7 +55,8 @@ export const HeroContent = styled.div`
     }
   }
 `
-export const HeroP1 = styled.p`
+export const HeroP1 = styled.span`
+  display: block;
   margin-top: 24px;
   color: ${({ theme }) => theme.main};
   font-size: 24px;
@@ -71,7 +72,8 @@ export const HeroP1 = styled.p`
   }
 `
 
-export const HeroH1 = styled.h1`
+export const HeroP2 = styled.span`
+  display: block;
   color: ${({ theme }) => theme.text};
   font-size: 48px;
   text-align: left;
@@ -84,7 +86,8 @@ export const HeroH1 = styled.h1`
     font-size: 32px;
   }
 `
-export const HeroP2 = styled.p`
+export const HeroP3 = styled.span`
+  display: block;
   color: ${({ theme }) => theme.text};
   margin-top: 24px;
   font-size: 24px;

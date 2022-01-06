@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
   background: ${({ theme }) => theme.background};
-  transition: all 0.8s ease-in-out;
+  // transition: all 0.8s ease-in-out;
   min-height: 700px;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
@@ -64,13 +64,39 @@ export const Title = styled.h2.attrs((props) => ({
   text-align: center;
   color: #01bf71;
   font-size: 28px;
-  line-height: 32px;
+  line-height: 50px;
   font-weight: 400;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 26px;
   font-family: 'Anonymous Pro', monospace;
 `
+
+export const SubTitle = styled.h3.attrs((props) => ({
+  className: props.className,
+}))`
+  font-size: 18px;
+  color: ${({ theme }) => theme.color};
+
+  &.longText {
+    // font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 12px;
+  }
+
+  &.underline {
+    text-transform: uppercase;
+    text-decoration: underline ${({ theme }) => theme.main};
+    text-decoration-thickness: 3px;
+  }
+`
+
+// export const WorkTitle = styled.h3`
+
+//   font-size: 20px;
+//   line-height: 26px;
+//   margin-bottom: 12px;
+// `
 
 // export const Heading = styled.p`
 //   margin-bottom: 24px;

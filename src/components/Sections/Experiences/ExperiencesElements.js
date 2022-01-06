@@ -60,7 +60,6 @@ export const CompanyItem = styled.li`
     color: ${({ theme }) => theme.main};
   }
 `
-export const Title = styled.h3``
 
 export const CompanyLink = styled.a`
   text-decoration: none;

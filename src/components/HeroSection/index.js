@@ -3,9 +3,9 @@ import React from 'react'
 import {
   HeroContainer,
   HeroContent,
-  HeroH1,
   HeroP1,
   HeroP2,
+  HeroP3,
 } from './HeroElements'
 
 const HeroSection = () => {
@@ -16,15 +16,15 @@ const HeroSection = () => {
           <HeroP1>Bonjour, je m'appelle</HeroP1>
         </p>
         <p>
-          <HeroH1>Jade Dupont.</HeroH1>
+          <HeroP2>Jade Dupont.</HeroP2>
         </p>
         <p>
-          <HeroH1>Je suis une développeuse web passionnée.</HeroH1>
+          <HeroP2>Je suis une développeuse web passionnée.</HeroP2>
         </p>
         <p>
-          <HeroP2>
+          <HeroP3>
             J'ai 11 ans d'expérience digitale hybride tech & produit.
-          </HeroP2>
+          </HeroP3>
         </p>
       </HeroContent>
     </HeroContainer>

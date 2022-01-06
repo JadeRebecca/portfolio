@@ -1,9 +1,11 @@
 import React from 'react'
+
+import { SubTitle as WorkTitle } from '../SectionElements'
+
 import {
   ItemWrapper,
   InfoWrapper,
   Category,
-  Title,
   Description,
   TechnoWrapper,
   Techno,
@@ -16,7 +18,7 @@ const WorkItem = ({ order, title, category, description, images, technos }) => {
     <ItemWrapper>
       <InfoWrapper order={order}>
         <Category>{category}</Category>
-        <Title>{title}</Title>
+        <WorkTitle className="longText">{title}</WorkTitle>
         <Description>{description}</Description>
         <TechnoWrapper>
           {technos.map((item, index) => (

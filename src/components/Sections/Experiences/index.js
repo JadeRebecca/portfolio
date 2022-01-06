@@ -4,6 +4,7 @@ import {
   InfoWrapper,
   TextWrapper,
   Title,
+  SubTitle,
 } from '../SectionElements'
 import {
   ExperienceContainer,
@@ -13,7 +14,6 @@ import {
   TypeWrapper,
   CompanyList,
   CompanyItem,
-  Title as ExperienceTitle,
   CompanyLink,
   Period,
   Description,
@@ -66,12 +66,12 @@ const Experiences = () => {
             </TextWrapper>
           </CompanyContainer>
           <DetailContainer>
-            <ExperienceTitle>
+            <SubTitle>
               {info.title}{' '}
               <CompanyLink href={info.website} target="_blank">
                 @{info.company}
               </CompanyLink>
-            </ExperienceTitle>
+            </SubTitle>
             <Period>{info.period}</Period>
             <Description>
               {info.description.map((item, index) => (

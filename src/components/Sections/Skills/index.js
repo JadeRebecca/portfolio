@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useIntersection } from '../../../hooks/useIntersection'
 import { useRef } from 'react'
-import { InfoContainer, InfoWrapper, Title } from '../SectionElements'
-import {
-  SkillsContainer,
-  SkillCol,
-  CategoryTitle,
-  SkillsDescription,
-} from './SkillsElements'
+import { InfoContainer, InfoWrapper, Title, SubTitle } from '../SectionElements'
+import { SkillsContainer, SkillCol, SkillsDescription } from './SkillsElements'
 // import strategyIcon from '../../images/icons/strategy.png'
 
 const Skills = () => {
@@ -28,7 +23,7 @@ const Skills = () => {
         <Title className="right">03. Mes compétences</Title>
         <SkillsContainer className={animation ? 'goAnimation' : 'hidden'}>
           <SkillCol>
-            <CategoryTitle>Tech</CategoryTitle>
+            <SubTitle className="underline">Tech</SubTitle>
             <SkillsDescription>
               FRONT-END : HTML, CSS, Bootstrap, Material UI, Javascript/ React.
               <br />
@@ -36,7 +31,7 @@ const Skills = () => {
             </SkillsDescription>
           </SkillCol>
           <SkillCol>
-            <CategoryTitle>ORGANISATION & STRATEGIE</CategoryTitle>
+            <SubTitle className="underline">ORGANISATION & STRATEGIE</SubTitle>
             <SkillsDescription>
               Méthode Scrum, Kanban, OKR, vision produit, réalisation de
               roadmap, préparation et animation des cérénomies Agiles OUTILS :
@@ -44,14 +39,14 @@ const Skills = () => {
             </SkillsDescription>
           </SkillCol>
           <SkillCol>
-            <CategoryTitle>COMMUNICATION & REDACTION</CategoryTitle>
+            <SubTitle className="underline">COMMUNICATION & REDACTION</SubTitle>
             <SkillsDescription>
               demo scrum, expression des besoins, cahier des charges, user
               story, manuel utilisateur, support de formation, manuel scolaire.
             </SkillsDescription>
           </SkillCol>
           <SkillCol>
-            <CategoryTitle>Soft skills</CategoryTitle>
+            <SubTitle className="underline">Soft skills</SubTitle>
             <SkillsDescription>
               +sport & yoga +cours part, coaching RELATIONNELLES : support,
               formation, accompagnement, assistance, dépannage des utilisateurs.
