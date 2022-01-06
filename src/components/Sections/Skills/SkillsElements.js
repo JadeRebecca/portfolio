@@ -43,7 +43,7 @@ export const SkillCol = styled.div`
     border: 2px solid ${({ theme }) => theme.main};
   }
 
-  @media screen and (max-width: ${({ theme }) => theme.breakpoint.l}px) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.xl}px) {
     width: 48%;
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
