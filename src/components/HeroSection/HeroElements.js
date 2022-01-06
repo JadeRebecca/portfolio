@@ -20,6 +20,11 @@ export const HeroContainer = styled.div`
   position: relative;
   z-index: 1;
   transition: all 0.8s ease-in-out;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
+    align-items: start;
+    padding-top: 20vh;
+  }
 `
 
 export const HeroContent = styled.div`
@@ -53,16 +58,16 @@ export const HeroContent = styled.div`
 export const HeroP1 = styled.p`
   margin-top: 24px;
   color: ${({ theme }) => theme.main};
-  font-size: 20px;
+  font-size: 24px;
   text-align: left;
   max-width: 600px;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
-    font-size: 12px;
+    font-size: 18px;
   }
 `
 

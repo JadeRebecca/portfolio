@@ -15,9 +15,9 @@ export const Nav = styled.nav`
   box-shadow: 0 10px 30px -10px ${({ theme }) => theme.shadow};
 }
 
-  @media screen and (max-width: 960px) {
-    transition: all 0.8s ease-in-out;
-  }
+  // @media screen and (max-width: 960px) {
+  //   transition: all 0.8s ease-in-out;
+  // }
 `
 
 export const NavbarContainer = styled.div`
@@ -28,7 +28,11 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  // max-width: 1100px;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.l}px) {
+    padding: 0 6px;
+  }
 `
 
 export const NavLogoLink = styled(LinkS)`
@@ -93,6 +97,10 @@ export const NavLink = styled(LinkS)`
   &:hover {
     color: ${({ theme }) => theme.main};
     transition: 0.2s ease-in-out;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.l}px) {
+    padding: 0 0.4rem;
   }
 `
 export const NavBtn = styled.nav`

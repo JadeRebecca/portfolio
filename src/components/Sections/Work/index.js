@@ -1,15 +1,7 @@
 import React from 'react'
 import { works } from './Data'
 
-import {
-  InfoContainer,
-  InfoWrapper,
-  InfoRow,
-  Column1,
-  TextWrapper,
-  Title,
-  Column2,
-} from '../SectionElements'
+import { InfoContainer, InfoWrapper, Title } from '../SectionElements'
 
 import WorkItem from './WorkItem'
 import { WorksWrapper } from './WorkElements'
