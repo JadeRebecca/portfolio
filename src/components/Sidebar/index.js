@@ -35,7 +35,7 @@ const Sidebar = ({ toggle, isOpen }) => {
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <ButtonLink text="Resume" />
+          <ButtonLink text="CV" />
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

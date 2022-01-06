@@ -2,15 +2,27 @@ import styled from 'styled-components'
 
 export const ExperienceContainer = styled.div`
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     flex-direction: column;
   }
 `
-export const CompanyContainer = styled.div``
+export const CompanyContainer = styled.div`
+  width: 38%;
 
-export const DetailContainer = styled.div``
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
+    width: 100%;
+  }
+`
+
+export const DetailContainer = styled.div`
+  width: 58%;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
+    width: 100%;
+  }
+`
 
 export const TypeWrapper = styled.div`
   margin-bottom: 24px;
@@ -36,7 +48,7 @@ export const CompanyItem = styled.li`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 30px;
+  min-height: 30px;
   cursor: pointer;
   border-left: 4px solid ${({ theme }) => theme.secondary};
   padding-left: 10px;

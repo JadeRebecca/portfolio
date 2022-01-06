@@ -6,7 +6,7 @@ import {
   Column1,
   TextWrapper,
   Title,
-  Subtitle,
+  Description,
   Column2,
   ImgWrap,
   Img,
@@ -21,13 +21,13 @@ const About = () => {
           <Column1>
             <TextWrapper>
               <Title>A propos de moi</Title>
-              <Subtitle>
+              <Description>
                 Autonome et polyvalente, j'ai une bonne capacité d'adaptation.
                 Je sais être pédagogue, patiente et avoir le sens de l'écoute,
                 J'ai l'esprit d'équipe et favorise l'intelligence collective.
                 Dotée d'un esprit créatif et désireuse d'apprendre, j'aime
                 aborder de nouveaux projets.
-              </Subtitle>
+              </Description>
             </TextWrapper>
           </Column1>
           <Column2>

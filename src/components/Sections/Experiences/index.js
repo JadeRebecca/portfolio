@@ -60,7 +60,7 @@ const Experiences = () => {
             <TextWrapper>
               <TypeWrapper>
                 <Type>Digitales</Type>
-                <Type>Autres</Type>
+                {/* <Type>Autres</Type> */}
               </TypeWrapper>
               <CompanyList>{companyList}</CompanyList>
             </TextWrapper>

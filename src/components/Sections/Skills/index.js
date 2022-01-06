@@ -17,7 +17,7 @@ const Skills = () => {
 
   useEffect(() => {
     if (inViewport) {
-      console.log('in viewport:', ref.current)
+      //console.log('in viewport:', ref.current)
       setAnimation(true)
     }
   }, [inViewport])

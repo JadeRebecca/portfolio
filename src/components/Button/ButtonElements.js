@@ -20,7 +20,9 @@ export const BtnLink = styled(LinkR)`
     color: ${({ theme }) => theme.text};
   }
 `
-export const Btn = styled.a`
+export const Btn = styled.a.attrs((props) => ({
+  className: props.className,
+}))`
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.main};
   border: 1.4px solid ${({ theme }) => theme.main};
@@ -32,6 +34,11 @@ export const Btn = styled.a`
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  line-height: 1;
+
+  &.icon {
+    padding: 2px 12px 2px 12px;
+  }
 
   &:hover {
     transition: all 0.2s ease-in-out;

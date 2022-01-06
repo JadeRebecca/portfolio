@@ -56,6 +56,8 @@ export const TechnoWrapper = styled.div`
 `
 export const Techno = styled.span`
   padding-right: 10px;
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: bold;
 `
 
 export const ItemImageWrapper = styled.div`

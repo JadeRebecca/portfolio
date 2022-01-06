@@ -89,7 +89,7 @@ const Navbar = ({ toggle, theme, themeToggler }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <Btn href={Pdf} target="_blank" text="Resume" />
+            <Btn href={Pdf} target="_blank" text="CV" />
           </NavBtn>
           <NavBtn>
             <ThemeToggler theme={theme} toggleTheme={themeToggler} />

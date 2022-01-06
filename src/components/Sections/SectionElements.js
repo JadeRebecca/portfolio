@@ -60,32 +60,34 @@ export const Title = styled.h2.attrs((props) => ({
 
   text-align: center;
   color: #01bf71;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 400;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 26px;
+  font-family: 'Anonymous Pro', monospace;
 `
 
-export const Heading = styled.p`
-  margin-bottom: 24px;
-  font-size: 48px;
-  line-height: 1.1;
-  font-weight: 600;
-  color:
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+// export const Heading = styled.p`
+//   margin-bottom: 24px;
+//   font-size: 48px;
+//   line-height: 1.1;
+//   font-weight: 600;
+//   color:
+//   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
 
-  @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
-    font-size: 32px;
-  }
-`
-export const Subtitle = styled.p`
+//   @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
+//     font-size: 32px;
+//   }
+//`
+export const Description = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? '#010606' : 'fff')};
+  text-align: justify;
 `
 export const BtnWrap = styled.div`
   display: flex;

@@ -6,37 +6,44 @@ import {
   Column1,
   TextWrapper,
   Title,
-  Heading,
-  Subtitle,
+  Description,
   Column2,
   ImgWrap,
   Img,
 } from '../SectionElements'
+import { BtnContainer } from './ContactElements'
 import Btn from '../../Button'
 import img from '../../../images/contact.svg'
 import { HiChevronDoubleRight } from 'react-icons/hi'
 import { HiOutlineMail } from 'react-icons/hi'
+import { GrLinkedinOption } from 'react-icons/gr'
 
 const Contact = () => {
   return (
     <InfoContainer id="contact">
       <InfoWrapper>
-        <Title>
-          <HiOutlineMail size={20} /> Contact
-        </Title>
+        <Title>04. Contact</Title>
         <InfoRow>
           <Column1>
             <TextWrapper>
-              <Heading>Heading</Heading>
-              <Subtitle>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </Subtitle>
-              <Btn
-                href="mailto:dupont.jade@gmail.com"
-                target="_blank"
-                text="contact me!"
-              />
+              {/* <Heading>Heading</Heading> */}
+              <Description>
+                Une idée de projet ?<br /> Une envie de discuter ?<br />
+                N'hésitez pas à me contacter, je serais ravie d'échanger avec
+                vous.
+              </Description>
+              <BtnContainer>
+                <Btn
+                  href="https://www.linkedin.com/in/jade-dupont/"
+                  target="_blank"
+                  icon={<GrLinkedinOption size={30} />}
+                />
+                <Btn
+                  href="mailto:dupont.jade@gmail.com"
+                  target="_blank"
+                  icon={<HiOutlineMail size={30} />}
+                />
+              </BtnContainer>
             </TextWrapper>
           </Column1>
           <Column2>
