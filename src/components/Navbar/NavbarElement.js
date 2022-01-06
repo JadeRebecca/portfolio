@@ -82,7 +82,9 @@ export const NavLink = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4px;
   height: 100%;
   cursor: pointer;
   padding-bottom: 4px;
@@ -100,7 +102,8 @@ export const NavLink = styled(LinkS)`
   }
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.l}px) {
-    padding: 0 0.4rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
   }
 `
 export const NavBtn = styled.nav`
