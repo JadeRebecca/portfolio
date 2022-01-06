@@ -58,9 +58,22 @@ export const SkillCol = styled.div`
 //   text-decoration-thickness: 3px;
 // `
 
-export const SkillsDescription = styled.p`
-  margin-top: 10px;
-  font-size: 18px;
-  line-height: 24px;
-  color: ${({ darkText }) => (darkText ? '#010606' : 'fff')};
+// export const SkillsDescription = styled.p`
+//   margin-top: 10px;
+//   font-size: 18px;
+//   line-height: 24px;
+//   color: ${({ darkText }) => (darkText ? '#010606' : 'fff')};
+// `
+
+export const SkillsDescription = styled.div`
+  //display: flex;
+  padding-top: 10px;
+`
+
+export const Skill = styled.span`
+  font-size: 16px;
+  padding: 2px 6px;
+  margin-right: 4px;
+  background: ${({ theme }) => theme.mainLight};
+  border-radius: 20px;
 `

@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { useIntersection } from '../../../hooks/useIntersection'
 import { useRef } from 'react'
 import { InfoContainer, InfoWrapper, Title, SubTitle } from '../SectionElements'
-import { SkillsContainer, SkillCol, SkillsDescription } from './SkillsElements'
+import {
+  SkillsContainer,
+  SkillCol,
+  SkillsDescription,
+  Skill,
+} from './SkillsElements'
 // import strategyIcon from '../../images/icons/strategy.png'
 
 const Skills = () => {
@@ -27,15 +32,17 @@ const Skills = () => {
             <SkillsDescription>
               FRONT-END : HTML, CSS, Bootstrap, Material UI, Javascript/ React.
               <br />
-              BACK-END : Node.js, PHP, Python/Django&Flask, SQL.
+              BACK-END : Node.js, PHP, Python/Django&Flask, SQL. Git/GitHub
+              Postman
             </SkillsDescription>
           </SkillCol>
           <SkillCol>
             <SubTitle className="underline">ORGANISATION & STRATEGIE</SubTitle>
             <SkillsDescription>
-              Méthode Scrum, Kanban, OKR, vision produit, réalisation de
-              roadmap, préparation et animation des cérénomies Agiles OUTILS :
-              VSCode, Git/GitHub, Jira, Azure DevOps, Trello, Google Analytics.
+              <Skill>Scrum</Skill>
+              <Skill>Kanban</Skill> OKR, vision produit, réalisation de roadmap,
+              préparation et animation des cérénomies Agiles OUTILS : VSCode,
+              Git/GitHub, Jira, Azure DevOps, Trello, Google Analytics.
             </SkillsDescription>
           </SkillCol>
           <SkillCol>
