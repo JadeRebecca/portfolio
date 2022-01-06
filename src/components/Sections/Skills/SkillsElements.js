@@ -66,14 +66,15 @@ export const SkillCol = styled.div`
 // `
 
 export const SkillsDescription = styled.div`
-  //display: flex;
-  padding-top: 10px;
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 `
 
-export const Skill = styled.span`
+export const Skill = styled.div`
   font-size: 16px;
   padding: 2px 6px;
-  margin-right: 4px;
   background: ${({ theme }) => theme.mainLight};
   border-radius: 20px;
 `

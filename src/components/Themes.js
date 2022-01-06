@@ -4,6 +4,7 @@ const basis = {
     s: 480,
     m: 768,
     l: 992,
+    xl: 1200,
   },
   borderRadius: 4,
 }

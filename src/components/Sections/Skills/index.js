@@ -8,6 +8,8 @@ import {
   SkillsDescription,
   Skill,
 } from './SkillsElements'
+import SkillItem from './SkillItem'
+import { works } from './Data'
 // import strategyIcon from '../../images/icons/strategy.png'
 
 const Skills = () => {
@@ -27,40 +29,9 @@ const Skills = () => {
       <InfoWrapper>
         <Title className="right">03. Mes compétences</Title>
         <SkillsContainer className={animation ? 'goAnimation' : 'hidden'}>
-          <SkillCol>
-            <SubTitle className="underline">Tech</SubTitle>
-            <SkillsDescription>
-              FRONT-END : HTML, CSS, Bootstrap, Material UI, Javascript/ React.
-              <br />
-              BACK-END : Node.js, PHP, Python/Django&Flask, SQL. Git/GitHub
-              Postman
-            </SkillsDescription>
-          </SkillCol>
-          <SkillCol>
-            <SubTitle className="underline">ORGANISATION & STRATEGIE</SubTitle>
-            <SkillsDescription>
-              <Skill>Scrum</Skill>
-              <Skill>Kanban</Skill> OKR, vision produit, réalisation de roadmap,
-              préparation et animation des cérénomies Agiles OUTILS : VSCode,
-              Git/GitHub, Jira, Azure DevOps, Trello, Google Analytics.
-            </SkillsDescription>
-          </SkillCol>
-          <SkillCol>
-            <SubTitle className="underline">COMMUNICATION & REDACTION</SubTitle>
-            <SkillsDescription>
-              demo scrum, expression des besoins, cahier des charges, user
-              story, manuel utilisateur, support de formation, manuel scolaire.
-            </SkillsDescription>
-          </SkillCol>
-          <SkillCol>
-            <SubTitle className="underline">Soft skills</SubTitle>
-            <SkillsDescription>
-              +sport & yoga +cours part, coaching RELATIONNELLES : support,
-              formation, accompagnement, assistance, dépannage des utilisateurs.
-              Pilotage de projet, gestion de petite équipe. LINGUISTIQUES :
-              anglais niveau intermédiaire
-            </SkillsDescription>
-          </SkillCol>
+          {works.map((item) => (
+            <SkillItem item={item} />
+          ))}
         </SkillsContainer>
       </InfoWrapper>
     </InfoContainer>
