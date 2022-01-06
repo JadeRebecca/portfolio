@@ -27,6 +27,6 @@ export const darkTheme = {
   background: '#0a192f',
   main: '#01bf71',
   mainBackground: '#008950',
-  mainLight: '#80DFB8',
+  mainLight: '#6F8C80',
   shadow: 'rgba(150, 200, 150,0.7)',
 }

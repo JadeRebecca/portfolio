@@ -41,6 +41,7 @@ export const SkillCol = styled.div`
   &:hover {
     transform: scale(1.05);
     border: 2px solid ${({ theme }) => theme.main};
+    box-shadow: 0 10px 30px -10px ${({ theme }) => theme.shadow};
   }
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.xl}px) {
@@ -50,21 +51,6 @@ export const SkillCol = styled.div`
     width: 100%;
   }
 `
-
-// export const CategoryTitle = styled.h3`
-//   font-size: 20px;
-//   text-transform: uppercase;
-//   text-decoration: underline ${({ theme }) => theme.main};
-//   text-decoration-thickness: 3px;
-// `
-
-// export const SkillsDescription = styled.p`
-//   margin-top: 10px;
-//   font-size: 18px;
-//   line-height: 24px;
-//   color: ${({ darkText }) => (darkText ? '#010606' : 'fff')};
-// `
-
 export const SkillsDescription = styled.div`
   margin-top: 8px;
   display: flex;

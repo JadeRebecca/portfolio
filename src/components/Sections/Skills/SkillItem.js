@@ -1,11 +1,6 @@
 import React from 'react'
-import { InfoContainer, InfoWrapper, Title, SubTitle } from '../SectionElements'
-import {
-  SkillsContainer,
-  SkillCol,
-  SkillsDescription,
-  Skill,
-} from './SkillsElements'
+import { SubTitle } from '../SectionElements'
+import { SkillCol, SkillsDescription, Skill } from './SkillsElements'
 
 const SkillItem = ({ item }) => {
   return (

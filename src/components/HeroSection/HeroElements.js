@@ -19,7 +19,7 @@ export const HeroContainer = styled.div`
   height: 800px;
   position: relative;
   z-index: 1;
-  transition: all 0.8s ease-in-out;
+  //transition: all 0.8s ease-in-out;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
     align-items: start;

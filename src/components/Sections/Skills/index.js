@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useIntersection } from '../../../hooks/useIntersection'
 import { useRef } from 'react'
-import { InfoContainer, InfoWrapper, Title, SubTitle } from '../SectionElements'
-import {
-  SkillsContainer,
-  SkillCol,
-  SkillsDescription,
-  Skill,
-} from './SkillsElements'
+import { InfoContainer, InfoWrapper, Title } from '../SectionElements'
+import { SkillsContainer } from './SkillsElements'
 import SkillItem from './SkillItem'
 import { works } from './Data'
 // import strategyIcon from '../../images/icons/strategy.png'
