@@ -83,7 +83,7 @@ export const works = [
     Création de la base de données SQL, développement, hébergement.
     Pilotage du projet en mode agile.
     Refonte du design de l'application en 2020 : application du thême Bootstrap Admin Kit.`,
-    images: ['work_default.png'],
+    images: ['work_gina.png'],
     technos: [
       'HTML',
       'CSS',
