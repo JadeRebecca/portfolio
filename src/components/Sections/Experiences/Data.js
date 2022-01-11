@@ -1,6 +1,7 @@
 export const experiences = [
   {
     id: 1,
+    type: 1,
     period: 'depuis 2019',
     company: 'freelance',
     website: '',
@@ -12,6 +13,7 @@ export const experiences = [
   },
   {
     id: 2,
+    type: 1,
     period: '2020 - 2021',
     company: 'So App',
     website: 'https://www.so-app.fr/',
@@ -26,6 +28,7 @@ export const experiences = [
   },
   {
     id: 3,
+    type: 1,
     period: '2019 - 2020',
     company: 'Europcar Mobility Group',
     website: 'https://europcar-mobility-group.com/',
@@ -40,6 +43,7 @@ export const experiences = [
   },
   {
     id: 4,
+    type: 1,
     period: '2018 - 2019',
     company: 'Innovative Digital Technologies',
     website: 'https://www.idt.pf/',
@@ -54,10 +58,53 @@ export const experiences = [
   },
   {
     id: 5,
+    type: 1,
     period: '2010 - 2017',
     company: 'Leos',
     website: 'https://www.leos.fr/',
     title: 'DEVELOPPEUSE WEB & CHEF DE PROJET',
+    description: [
+      `Analyse et traduction des besoins des clients, rédaction de cahiers des charges, conception et maintenance de bases de données (MySQL), développement et déploiement
+        d'application web sur-mesure de type intranet, ERP, GED (PHP) orientée EdTech.`,
+      `Création de sites internet, rédaction de manuel utilisateur et tutoriel, support utilisateur, formation en clientèle.`,
+      `Création et mise en place d'outils de gestion interne (prospection, gestion financière, pilotage des projets, communication, suivi des demandes, statistiques)`,
+    ],
+  },
+  {
+    id: 6,
+    type: 2,
+    period: '2009 - 2010',
+    company: 'Lycée Gaston Bachelard, Chelles (77)',
+    website: 'http://www.lyceebachelardchelles.fr/',
+    title: 'ASSISTANTE PEDAGOGIQUE PHYSIQUE-CHIMIE',
+    description: [
+      `Analyse et traduction des besoins des clients, rédaction de cahiers des charges, conception et maintenance de bases de données (MySQL), développement et déploiement
+        d'application web sur-mesure de type intranet, ERP, GED (PHP) orientée EdTech.`,
+      `Création de sites internet, rédaction de manuel utilisateur et tutoriel, support utilisateur, formation en clientèle.`,
+      `Création et mise en place d'outils de gestion interne (prospection, gestion financière, pilotage des projets, communication, suivi des demandes, statistiques)`,
+    ],
+  },
+  {
+    id: 7,
+    type: 2,
+    period: '2009 - 2010',
+    company: 'Complétude',
+    website: 'https://www.completude.com/',
+    title: 'ENSEIGNANTE VACATAIRE',
+    description: [
+      `Analyse et traduction des besoins des clients, rédaction de cahiers des charges, conception et maintenance de bases de données (MySQL), développement et déploiement
+        d'application web sur-mesure de type intranet, ERP, GED (PHP) orientée EdTech.`,
+      `Création de sites internet, rédaction de manuel utilisateur et tutoriel, support utilisateur, formation en clientèle.`,
+      `Création et mise en place d'outils de gestion interne (prospection, gestion financière, pilotage des projets, communication, suivi des demandes, statistiques)`,
+    ],
+  },
+  {
+    id: 8,
+    type: 2,
+    period: '2009 - 2010',
+    company: 'Profadom',
+    website: 'https://www.completude.com/',
+    title: 'ENSEIGNANTE VACATAIRE',
     description: [
       `Analyse et traduction des besoins des clients, rédaction de cahiers des charges, conception et maintenance de bases de données (MySQL), développement et déploiement
         d'application web sur-mesure de type intranet, ERP, GED (PHP) orientée EdTech.`,

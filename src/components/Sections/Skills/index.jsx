@@ -14,7 +14,6 @@ const Skills = () => {
 
   useEffect(() => {
     if (inViewport) {
-      //console.log('in viewport:', ref.current)
       setAnimation(true)
     }
   }, [inViewport])
@@ -24,8 +23,8 @@ const Skills = () => {
       <InfoWrapper>
         <Title className="right">03. Mes compétences</Title>
         <SkillsContainer className={animation ? 'goAnimation' : 'hidden'}>
-          {works.map((item) => (
-            <SkillItem item={item} />
+          {works.map((item, index) => (
+            <SkillItem key={index} item={item} />
           ))}
         </SkillsContainer>
       </InfoWrapper>

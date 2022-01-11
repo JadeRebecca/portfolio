@@ -7,8 +7,8 @@ const SkillItem = ({ item }) => {
     <SkillCol>
       <SubTitle className="underline">{item.category}</SubTitle>
       <SkillsDescription>
-        {item.skills.map((skill) => (
-          <Skill>{skill}</Skill>
+        {item.skills.map((skill, index) => (
+          <Skill key={index}>{skill}</Skill>
         ))}
       </SkillsDescription>
     </SkillCol>

@@ -1,8 +1,27 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const divFadeIn = keyframes`
+  0% {
+    transform: translateY(100%);
+  }
+100%
+   {
+    transform: translateY(0%);
+  }
+`
 
 export const ExperienceContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  &.hidden {
+    display: none;
+  }
+  &.goAnimation {
+    > div {
+      animation: ${divFadeIn} 1000ms ease forwards;
+    }
+  }
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     flex-direction: column;
@@ -89,4 +108,10 @@ export const DescriptionItem = styled.li`
     content: '► ';
     color: ${({ theme }) => theme.main};
   }
+`
+
+export const BtnContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 `
