@@ -54,10 +54,10 @@ export const CompanyItem = styled.li`
   padding-left: 10px;
 
   &.active {
-    border-left: 4px solid ${({ theme }) => theme.main};
+    border-left: 4px solid ${({ theme }) => theme.primary};
     transition: 0.3s ease-in-out;
     background: ${({ theme }) => theme.secondary};
-    color: ${({ theme }) => theme.main};
+    color: ${({ theme }) => theme.background};
   }
 `
 

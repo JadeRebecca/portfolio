@@ -42,8 +42,9 @@ export const Btn = styled.a.attrs((props) => ({
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ theme }) => theme.main};
+    background: ${({ theme }) => theme.secondary};
+    border-color: ${({ theme }) => theme.background};
     // color: ${({ theme }) => theme.text};
-    color: white;
+    color: ${({ theme }) => theme.background};
   }
 `

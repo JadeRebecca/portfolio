@@ -62,7 +62,7 @@ export const Title = styled.h2.attrs((props) => ({
   }
 
   text-align: center;
-  color: #01bf71;
+  color: ${({ theme }) => theme.main};
   font-size: 28px;
   line-height: 50px;
   font-weight: 400;

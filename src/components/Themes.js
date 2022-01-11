@@ -17,6 +17,8 @@ export const lightTheme = {
   background: '#fff',
   mainBackground: '#80DFB8',
   mainLight: '#80DFB8',
+  primary: '#80DFB8',
+  secondary: '#00a07f',
 }
 export const darkTheme = {
   ...basis,
@@ -26,4 +28,6 @@ export const darkTheme = {
   background: '#0a192f',
   mainBackground: '#00a07f',
   mainLight: '#6F8C80',
+  primary: '#00a07f',
+  secondary: '#80DFB8',
 }
