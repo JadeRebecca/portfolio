@@ -7,6 +7,7 @@ import {
   TextWrapper,
   Title,
   Description,
+  Forth,
   Column2,
   ImgWrap,
   Img,
@@ -22,10 +23,11 @@ const About = () => {
             <TextWrapper>
               <Title>A propos de moi</Title>
               <Description>
-                Autonome et polyvalente, j'ai une bonne capacité d'adaptation.
-                Je sais être pédagogue, patiente et avoir le sens de l'écoute,
-                J'ai l'esprit d'équipe et favorise l'intelligence collective.
-                Dotée d'un esprit créatif et désireuse d'apprendre, j'aime
+                <Forth>Autonome</Forth> et polyvalente, j'ai une bonne capacité
+                d'adaptation. Je sais être <Forth>pédagogue</Forth>, patiente et
+                avoir le sens de l'écoute. J'ai l'esprit d'équipe et favorise l'
+                <Forth>intelligence collective</Forth>. Dotée d'un esprit
+                créatif et en <Forth>perpétuel apprentissage</Forth>, j'aime
                 aborder de nouveaux projets.
               </Description>
             </TextWrapper>

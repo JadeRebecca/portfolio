@@ -55,7 +55,7 @@ export const HeroContent = styled.h1`
     }
   }
 `
-export const HeroP1 = styled.span`
+export const HeroS1 = styled.span`
   display: block;
   margin-top: 24px;
   color: ${({ theme }) => theme.main};
@@ -72,7 +72,7 @@ export const HeroP1 = styled.span`
   }
 `
 
-export const HeroP2 = styled.span`
+export const HeroS2 = styled.span`
   display: block;
   color: ${({ theme }) => theme.text};
   font-size: 48px;
@@ -86,13 +86,13 @@ export const HeroP2 = styled.span`
     font-size: 32px;
   }
 `
-export const HeroP3 = styled.span`
+export const HeroS3 = styled.span`
   display: block;
   color: ${({ theme }) => theme.text};
   margin-top: 24px;
   font-size: 24px;
   text-align: left;
-  max-width: 600px;
+  // max-width: 600px;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     font-size: 24px;
@@ -101,4 +101,7 @@ export const HeroP3 = styled.span`
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
     font-size: 18px;
   }
+`
+export const HeroS4 = styled.span`
+  color: ${({ theme }) => theme.main};
 `

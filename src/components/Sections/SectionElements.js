@@ -91,33 +91,19 @@ export const SubTitle = styled.h3.attrs((props) => ({
   }
 `
 
-// export const WorkTitle = styled.h3`
-
-//   font-size: 20px;
-//   line-height: 26px;
-//   margin-bottom: 12px;
-// `
-
-// export const Heading = styled.p`
-//   margin-bottom: 24px;
-//   font-size: 48px;
-//   line-height: 1.1;
-//   font-weight: 600;
-//   color:
-//   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
-
-//   @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
-//     font-size: 32px;
-//   }
-//`
 export const Description = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
-  line-height: 24px;
-  color: ${({ darkText }) => (darkText ? '#010606' : 'fff')};
+  line-height: 26px;
+  color: ${({ theme }) => theme.text};
   text-align: justify;
 `
+
+export const Forth = styled.span`
+  font-weight: bold;
+`
+
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
