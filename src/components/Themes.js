@@ -1,5 +1,4 @@
 const basis = {
-  shadow: 'rgba(2,12,27,0.7)',
   breakpoint: {
     s: 480,
     m: 768,
@@ -16,6 +15,7 @@ export const lightTheme = {
   primary: '#80DFB8',
   secondary: '#00a07f',
   neutral: '#80DFB8',
+  shadow: 'rgba(2,12,27,0.7)',
 }
 export const darkTheme = {
   ...basis,
@@ -24,4 +24,5 @@ export const darkTheme = {
   primary: '#00a07f',
   secondary: '#80DFB8',
   neutral: '#6F8C80',
+  shadow: 'rgba(203,231,202,0.7)',
 }
