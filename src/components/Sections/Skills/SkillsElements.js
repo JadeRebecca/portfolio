@@ -61,6 +61,6 @@ export const SkillsDescription = styled.div`
 export const Skill = styled.div`
   font-size: 16px;
   padding: 3px 10px;
-  background: ${({ theme }) => theme.mainLight};
+  background: ${({ theme }) => theme.neutral};
   border-radius: 20px;
 `

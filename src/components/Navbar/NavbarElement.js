@@ -2,7 +2,7 @@ import { Link as LinkS } from 'react-scroll'
 import styled from 'styled-components'
 
 export const Nav = styled.nav`
-  background: ${({ theme }) => theme.mainBackground};
+  background: ${({ theme }) => theme.primary};
   height: 80px;
   //   margin-top: -80px;
   display: flex;
@@ -17,7 +17,7 @@ export const Nav = styled.nav`
 `
 
 export const NavbarContainer = styled.div`
-  background: ${({ theme }) => theme.mainBackground};
+  background: ${({ theme }) => theme.primary};
   display: flex;
   justify-content: space-between;
   height: 80px;

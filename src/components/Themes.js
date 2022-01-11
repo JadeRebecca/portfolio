@@ -11,23 +11,17 @@ const basis = {
 }
 export const lightTheme = {
   ...basis,
-  body: '#fff',
   text: '#0a192f',
-  toggleBorder: '#FFF',
   background: '#fff',
-  mainBackground: '#80DFB8',
-  mainLight: '#80DFB8',
   primary: '#80DFB8',
   secondary: '#00a07f',
+  neutral: '#80DFB8',
 }
 export const darkTheme = {
   ...basis,
-  body: '#0a192f',
   text: '#FAFAFA',
-  toggleBorder: '#6B8096',
   background: '#0a192f',
-  mainBackground: '#00a07f',
-  mainLight: '#6F8C80',
   primary: '#00a07f',
   secondary: '#80DFB8',
+  neutral: '#6F8C80',
 }
