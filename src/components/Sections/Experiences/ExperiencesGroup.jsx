@@ -21,12 +21,10 @@ import {
   DescriptionItem,
 } from './ExperiencesElements'
 
-const ExperiencesGroup = ({ category, data, display }) => {
-  console.log(display)
+const ExperiencesGroup = ({ category, data, display, displayAlways }) => {
   const [isVisible, setIsVisible] = useState(display)
 
   useEffect(() => {
-    console.log('display change')
     setIsVisible(display)
   }, [display])
 
@@ -59,9 +57,11 @@ const ExperiencesGroup = ({ category, data, display }) => {
   ))
 
   return (
-    <ExperienceContainer className={isVisible ? 'goAnimation' : 'hidden'}>
+    <ExperienceContainer
+      className={displayAlways ? '' : isVisible ? 'goAnimation' : 'hidden'}
+    >
       <CompanyContainer>
-        <TextWrapper>
+        <TextWrapper className={displayAlways ? 'inner' : ''}>
           <TypeWrapper>
             <Type>{category}</Type>
           </TypeWrapper>

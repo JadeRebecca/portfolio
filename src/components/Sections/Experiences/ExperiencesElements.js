@@ -113,5 +113,6 @@ export const DescriptionItem = styled.li`
 export const BtnContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 `

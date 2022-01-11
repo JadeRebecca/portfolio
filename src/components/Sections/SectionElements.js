@@ -45,10 +45,16 @@ export const Column2 = styled.div`
   padding: 0 15px;
   grid-area: col2;
 `
-export const TextWrapper = styled.div`
+export const TextWrapper = styled.div.attrs((props) => ({
+  className: props.className,
+}))`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
+
+  &.inner {
+    padding-bottom: 0px;
+  }
 `
 export const Title = styled.h2.attrs((props) => ({
   className: props.className,
