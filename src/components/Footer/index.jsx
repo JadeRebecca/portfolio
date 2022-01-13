@@ -18,7 +18,7 @@ const Footer = () => {
             <FaReact size={30} />
           </IconWrapper>
         </LinkEl>
-        <LinkEl>-Réalisé par Jade Dupont avec React JS</LinkEl>
+        <LinkEl>->Réalisé par Jade Dupont avec React JS</LinkEl>
       </Link>
     </FooterContainer>
   )
