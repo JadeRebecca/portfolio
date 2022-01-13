@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 70%;
+  width: 75%;
   margin: auto;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
